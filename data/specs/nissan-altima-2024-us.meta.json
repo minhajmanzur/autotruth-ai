@@ -1,0 +1,13 @@
+{
+  "make": "Nissan",
+  "model": "Altima",
+  "year": 2024,
+  "market": "US",
+  "default_units": {
+    "fuel_economy": "mpg"
+  },
+  "title": "2024 Nissan Altima Specifications (Nissan USA newsroom)",
+  "source_url": "https://usa.nissannews.com/en-US/releases/2024-nissan-altima-specifications",
+  "file": "nissan-altima-2024-us.html",
+  "download_url": "https://usa.nissannews.com/en-US/releases/2024-nissan-altima-specifications"
+}

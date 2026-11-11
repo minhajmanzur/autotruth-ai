@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+data/autotruth.db
+data/qdrant/
+frontend/node_modules/
+frontend/dist/
+
+# Manufacturer documents are downloaded, not redistributed: scripts/fetch_real_specs.py
+data/real-specs/
+data/specs/toyota-*.pdf
+data/specs/hyundai-*.pdf
+data/specs/bmw-*.pdf
+data/specs/mercedes-*.html
+data/specs/nissan-*.html

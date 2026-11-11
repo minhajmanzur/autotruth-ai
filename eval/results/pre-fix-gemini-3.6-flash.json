@@ -1,0 +1,356 @@
+{
+  "generated_at": "2026-11-11 17:57:38",
+  "pipeline": {
+    "extractor": "rules",
+    "retrieval": "hybrid (BM25 + BAAI/bge-small-en-v1.5 in Qdrant, RRF)",
+    "reviews": 6,
+    "gold_claims": 89,
+    "predicted_claims": 87,
+    "gold_verdict_distribution": {
+      "supported": 73,
+      "partial": 3,
+      "contradicted": 11,
+      "unverifiable": 2
+    },
+    "claim_extraction": {
+      "precision": 1.0,
+      "recall": 0.978,
+      "f1": 0.989,
+      "tp": 87,
+      "fp": 0,
+      "fn": 2
+    },
+    "subjective_separation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    },
+    "vehicle_configuration_accuracy": 1.0,
+    "claim_trim_accuracy": 1.0,
+    "verification_accuracy_on_extracted": 1.0,
+    "verification_accuracy_end_to_end": 0.978,
+    "numeric_matching_accuracy": 1.0,
+    "contradiction_detection": {
+      "precision": 1.0,
+      "recall": 0.909,
+      "f1": 0.952,
+      "tp": 10,
+      "fp": 0,
+      "fn": 1
+    },
+    "retrieval_recall_at_k": {
+      "@1": 0.954,
+      "@2": 1.0,
+      "@3": 1.0
+    },
+    "citation_correctness": 1.0,
+    "citation_verbatim_in_pdf": 1.0,
+    "hallucination_rate": {
+      "spurious_claims": 0.0,
+      "fabricated_citations": 0.0
+    },
+    "unsupported_claim_rate_gold": 0.18,
+    "confusion": {
+      "supported": {
+        "supported": 72
+      },
+      "partial": {
+        "partial": 3
+      },
+      "contradicted": {
+        "contradicted": 10
+      },
+      "unverifiable": {
+        "unverifiable": 2
+      }
+    },
+    "latency_ms": {
+      "mean": 131,
+      "max": 240
+    },
+    "cost_per_review_usd": 0.0,
+    "errors": [
+      {
+        "review": "gulfdrive-solara-xle",
+        "type": "missed claim",
+        "gold": "drivetrain=FWD",
+        "sentence": "sent to the front wheels"
+      },
+      {
+        "review": "continental-solara-excel",
+        "type": "missed claim",
+        "gold": "acceleration=8.4",
+        "sentence": "8.4 seconds"
+      }
+    ]
+  },
+  "ablation_bm25_only": {
+    "extractor": "rules",
+    "retrieval": "BM25",
+    "reviews": 6,
+    "gold_claims": 89,
+    "predicted_claims": 87,
+    "gold_verdict_distribution": {
+      "supported": 73,
+      "partial": 3,
+      "contradicted": 11,
+      "unverifiable": 2
+    },
+    "claim_extraction": {
+      "precision": 1.0,
+      "recall": 0.978,
+      "f1": 0.989,
+      "tp": 87,
+      "fp": 0,
+      "fn": 2
+    },
+    "subjective_separation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    },
+    "vehicle_configuration_accuracy": 1.0,
+    "claim_trim_accuracy": 1.0,
+    "verification_accuracy_on_extracted": 1.0,
+    "verification_accuracy_end_to_end": 0.978,
+    "numeric_matching_accuracy": 1.0,
+    "contradiction_detection": {
+      "precision": 1.0,
+      "recall": 0.909,
+      "f1": 0.952,
+      "tp": 10,
+      "fp": 0,
+      "fn": 1
+    },
+    "retrieval_recall_at_k": {
+      "@1": 0.954,
+      "@2": 0.989,
+      "@3": 1.0
+    },
+    "citation_correctness": 1.0,
+    "citation_verbatim_in_pdf": 1.0,
+    "hallucination_rate": {
+      "spurious_claims": 0.0,
+      "fabricated_citations": 0.0
+    },
+    "unsupported_claim_rate_gold": 0.18,
+    "confusion": {
+      "supported": {
+        "supported": 72
+      },
+      "partial": {
+        "partial": 3
+      },
+      "contradicted": {
+        "contradicted": 10
+      },
+      "unverifiable": {
+        "unverifiable": 2
+      }
+    },
+    "latency_ms": {
+      "mean": 5,
+      "max": 8
+    },
+    "cost_per_review_usd": 0.0,
+    "errors": [
+      {
+        "review": "gulfdrive-solara-xle",
+        "type": "missed claim",
+        "gold": "drivetrain=FWD",
+        "sentence": "sent to the front wheels"
+      },
+      {
+        "review": "continental-solara-excel",
+        "type": "missed claim",
+        "gold": "acceleration=8.4",
+        "sentence": "8.4 seconds"
+      }
+    ]
+  },
+  "pipeline_llm_extractor": {
+    "extractor": "llm (gemini-3.6-flash)",
+    "retrieval": "hybrid (BM25 + BAAI/bge-small-en-v1.5 in Qdrant, RRF)",
+    "reviews": 6,
+    "gold_claims": 89,
+    "predicted_claims": 92,
+    "gold_verdict_distribution": {
+      "supported": 73,
+      "partial": 3,
+      "contradicted": 11,
+      "unverifiable": 2
+    },
+    "claim_extraction": {
+      "precision": 0.957,
+      "recall": 0.989,
+      "f1": 0.972,
+      "tp": 88,
+      "fp": 4,
+      "fn": 1
+    },
+    "subjective_separation": {
+      "precision": 0.7,
+      "recall": 0.875,
+      "f1": 0.778,
+      "tp": 7,
+      "fp": 3,
+      "fn": 1
+    },
+    "vehicle_configuration_accuracy": 1.0,
+    "claim_trim_accuracy": 1.0,
+    "verification_accuracy_on_extracted": 0.989,
+    "verification_accuracy_end_to_end": 0.978,
+    "numeric_matching_accuracy": 0.98,
+    "contradiction_detection": {
+      "precision": 1.0,
+      "recall": 0.909,
+      "f1": 0.952,
+      "tp": 10,
+      "fp": 0,
+      "fn": 1
+    },
+    "retrieval_recall_at_k": {
+      "@1": 0.943,
+      "@2": 1.0,
+      "@3": 1.0
+    },
+    "citation_correctness": 1.0,
+    "citation_verbatim_in_pdf": 1.0,
+    "hallucination_rate": {
+      "spurious_claims": 0.043,
+      "fabricated_citations": 0.0
+    },
+    "unsupported_claim_rate_gold": 0.18,
+    "confusion": {
+      "supported": {
+        "supported": 72
+      },
+      "partial": {
+        "partial": 3
+      },
+      "contradicted": {
+        "contradicted": 10,
+        "supported": 1
+      },
+      "unverifiable": {
+        "unverifiable": 2
+      }
+    },
+    "latency_ms": {
+      "mean": 18506,
+      "max": 24962
+    },
+    "cost_per_review_usd": null,
+    "errors": [
+      {
+        "review": "gulfdrive-solara-xle",
+        "type": "spurious claim",
+        "claim": "Powertrain type: hybrid",
+        "sentence": "The hybrid powertrain pairs a 2.5-litre four-cylinder engine with an electric motor for a combined 225 horsepower, sent to the front wheels through an e-CVT."
+      },
+      {
+        "review": "trailhead-ridgeback-video",
+        "type": "wrong verdict",
+        "gold": "contradicted",
+        "predicted": "supported",
+        "claim": "Towing capacity: less than 2,500 kg",
+        "reason": "Matches the official figure: Towing capacity (braked): 2,000 kg."
+      },
+      {
+        "review": "trailhead-ridgeback-video",
+        "type": "missed claim",
+        "gold": "feature=Third-row seats",
+        "sentence": "third row"
+      },
+      {
+        "review": "trailhead-ridgeback-video",
+        "type": "spurious claim",
+        "claim": "low range: standard",
+        "sentence": "It gets a ten-speed automatic and proper four-wheel drive with low range."
+      },
+      {
+        "review": "trailhead-ridgeback-video",
+        "type": "spurious claim",
+        "claim": "third row: absent",
+        "sentence": "You can't get a third row in the Adventure, and there's no locking rear differential either."
+      },
+      {
+        "review": "voltkreis-eline-long-range",
+        "type": "spurious claim",
+        "claim": "Power output: 282 hp",
+        "sentence": "The rear motor produces 210 kW, which is 282 hp, and 350 Nm of torque."
+      }
+    ]
+  },
+  "baseline_llm_judge": {
+    "model": "gemini-3.6-flash",
+    "claims": 89,
+    "verification_accuracy": 0.955,
+    "contradiction_detection": {
+      "precision": 0.786,
+      "recall": 1.0,
+      "f1": 0.88,
+      "tp": 11,
+      "fp": 3,
+      "fn": 0
+    },
+    "confusion": {
+      "supported": {
+        "supported": 71,
+        "contradicted": 1,
+        "unverifiable": 1
+      },
+      "partial": {
+        "contradicted": 2,
+        "partial": 1
+      },
+      "contradicted": {
+        "contradicted": 11
+      },
+      "unverifiable": {
+        "unverifiable": 2
+      }
+    },
+    "total_tokens": 38973,
+    "errors": [
+      {
+        "review": "gulfdrive-solara-xle",
+        "type": "wrong verdict",
+        "claim": "curb_weight=1650",
+        "gold": "supported",
+        "predicted": "contradicted",
+        "sentence": "about 1,650 kg"
+      },
+      {
+        "review": "gulfdrive-solara-xle",
+        "type": "wrong verdict",
+        "claim": "feature=Ventilated front seats",
+        "gold": "partial",
+        "predicted": "contradicted",
+        "sentence": "Ventilated front seats"
+      },
+      {
+        "review": "forum-solara-owner",
+        "type": "wrong verdict",
+        "claim": "feature=Head-up display",
+        "gold": "partial",
+        "predicted": "contradicted",
+        "sentence": "no head-up display"
+      },
+      {
+        "review": "continental-solara-excel",
+        "type": "wrong verdict",
+        "claim": "fuel_economy=49",
+        "gold": "supported",
+        "predicted": "unverifiable",
+        "sentence": "49 mpg"
+      }
+    ]
+  }
+}

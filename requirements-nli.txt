@@ -1,0 +1,4 @@
+# Optional: DeBERTa NLI cross-encoder for non-numeric claims (pulls in torch, ~1 GB).
+# Without it, categorical claims are checked by the rule-based matcher and
+# free-text claims fall back to "unverifiable".
+sentence-transformers>=3.0

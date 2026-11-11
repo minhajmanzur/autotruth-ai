@@ -1,0 +1,14 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.7
+python-dotenv>=1.0
+python-multipart>=0.0.9
+httpx>=0.27
+numpy>=1.26
+PyMuPDF>=1.24
+reportlab>=4.2          # only used to generate the demo specification PDFs
+fastembed>=0.4          # BGE embeddings on onnxruntime (no torch needed)
+qdrant-client>=1.12     # vector database, embedded local mode
+openai>=1.68,<3.0       # any OpenAI-compatible endpoint: GPT, Ollama/Llama, Gemini
+youtube-transcript-api>=1.0
+pytest>=8.2

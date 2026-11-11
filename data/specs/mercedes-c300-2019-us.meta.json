@@ -1,0 +1,19 @@
+{
+  "make": "Mercedes-Benz",
+  "model": "C 300",
+  "year": 2019,
+  "market": "US",
+  "aliases": [
+    "C300",
+    "C-Class",
+    "Mercedes C 300",
+    "Mercedes C300"
+  ],
+  "default_units": {
+    "torque": "lb-ft"
+  },
+  "title": "2019 Mercedes-Benz C 300 and C 300 4MATIC Sedan Specifications (MBUSA media)",
+  "source_url": "https://media.mbusa.com/news/2019-mercedes-benz-c-300-and-c-300-4matic-sedan",
+  "file": "mercedes-c300-2019-us.html",
+  "download_url": "https://media.mbusa.com/news/2019-mercedes-benz-c-300-and-c-300-4matic-sedan"
+}

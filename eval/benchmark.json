@@ -1,0 +1,130 @@
+{
+  "description": "Hand-labelled claim-level benchmark over the six sample reviews. Each gold claim: attribute, value (number or text), trim it is about, gold verdict, the specification section that holds the evidence, and a substring ('in') of the sentence it comes from. Labels were written by hand against scripts/make_demo_specs.py, not produced by the pipeline. mpg is US gallons.",
+  "reviews": {
+    "gulfdrive-solara-xle": {
+      "vehicle": {"make": "Meridian", "model": "Solara", "year": 2025, "market": "GCC", "trim": "XLE Hybrid"},
+      "claims": [
+        {"attribute": "displacement", "value": 2.5, "unit": "L", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Engine & Performance", "in": "2.5-litre"},
+        {"attribute": "cylinders", "value": 4, "trim": "XLE Hybrid", "verdict": "supported", "heading": "Engine & Performance", "in": "four-cylinder"},
+        {"attribute": "power", "value": 225, "unit": "hp", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Engine & Performance", "in": "225 horsepower"},
+        {"attribute": "drivetrain", "value": "FWD", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Transmission & Drivetrain", "in": "sent to the front wheels"},
+        {"attribute": "transmission", "value": "CVT", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Transmission & Drivetrain", "in": "e-CVT"},
+        {"attribute": "torque", "value": 221, "unit": "Nm", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Engine & Performance", "in": "Peak torque"},
+        {"attribute": "acceleration", "value": 7.8, "unit": "s", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Engine & Performance", "in": "7.8 seconds"},
+        {"attribute": "fuel_economy", "value": 23.8, "unit": "km/l", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Fuel Economy (NEDC)", "in": "23.8 km/l"},
+        {"attribute": "fuel_economy", "value": 25, "unit": "km/l", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Fuel Economy (NEDC)", "in": "25 km/l"},
+        {"attribute": "fuel_tank", "value": 50, "unit": "L", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Fuel Economy (NEDC)", "in": "50-litre tank"},
+        {"attribute": "length", "value": 4920, "unit": "mm", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Dimensions & Weights", "in": "4,920 mm"},
+        {"attribute": "wheelbase", "value": 2825, "unit": "mm", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Dimensions & Weights", "in": "2,825 mm"},
+        {"attribute": "cargo_volume", "value": 428, "unit": "L", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Dimensions & Weights", "in": "428-litre boot"},
+        {"attribute": "curb_weight", "value": 1650, "unit": "kg", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Dimensions & Weights", "in": "about 1,650 kg"},
+        {"attribute": "airbags", "value": 9, "trim": "XLE Hybrid", "verdict": "supported", "heading": "Safety & Driver Assistance", "in": "nine airbags"},
+        {"attribute": "feature", "value": "Adaptive cruise control", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Safety & Driver Assistance", "in": "adaptive cruise control"},
+        {"attribute": "feature", "value": "360-degree camera", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Safety & Driver Assistance", "in": "360-degree camera"},
+        {"attribute": "feature", "value": "Panoramic sunroof", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Comfort & Technology", "in": "panoramic sunroof"},
+        {"attribute": "feature", "value": "Ventilated front seats", "trim": "XLE Hybrid", "verdict": "partial", "heading": "Comfort & Technology", "in": "Ventilated front seats"},
+        {"attribute": "feature", "value": "Head-up display", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Comfort & Technology", "in": "head-up display"},
+        {"attribute": "warranty_years", "value": 5, "trim": "XLE Hybrid", "verdict": "supported", "heading": "Warranty", "in": "five-year warranty"}
+      ],
+      "subjective": ["The cabin feels genuinely premium", "The steering is light but vague"]
+    },
+    "forum-solara-owner": {
+      "vehicle": {"make": "Meridian", "model": "Solara", "year": 2025, "market": "GCC", "trim": "XLE Hybrid"},
+      "claims": [
+        {"attribute": "power", "value": 230, "unit": "hp", "trim": "XLE Hybrid", "verdict": "contradicted", "heading": "Engine & Performance", "in": "230 horsepower"},
+        {"attribute": "fuel_economy", "value": 20, "unit": "km/l", "trim": "XLE Hybrid", "verdict": "contradicted", "heading": "Fuel Economy (NEDC)", "in": "20 km/l"},
+        {"attribute": "acceleration", "value": 7.8, "unit": "s", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Engine & Performance", "in": "7.8 seconds"},
+        {"attribute": "top_speed", "value": 210, "unit": "km/h", "trim": "XLE Hybrid", "verdict": "contradicted", "heading": "Engine & Performance", "in": "210 km/h"},
+        {"attribute": "cargo_volume", "value": 428, "unit": "L", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Dimensions & Weights", "in": "428 litres"},
+        {"attribute": "width", "value": 1840, "unit": "mm", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Dimensions & Weights", "in": "1,840 mm wide"},
+        {"attribute": "ground_clearance", "value": 145, "unit": "mm", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Dimensions & Weights", "in": "145 mm"},
+        {"attribute": "drivetrain", "value": "AWD", "trim": "XLE Hybrid", "verdict": "contradicted", "heading": "Transmission & Drivetrain", "in": "all-wheel drive"},
+        {"attribute": "feature", "value": "Head-up display", "trim": "XLE Hybrid", "verdict": "partial", "heading": "Comfort & Technology", "in": "no head-up display"},
+        {"attribute": "feature", "value": "Blind spot monitor", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Safety & Driver Assistance", "in": "Blind spot monitor"},
+        {"attribute": "feature", "value": "Wireless phone charger", "trim": "XLE Hybrid", "verdict": "supported", "heading": "Comfort & Technology", "in": "Wireless phone charger"},
+        {"attribute": "battery_warranty_years", "value": 10, "trim": "XLE Hybrid", "verdict": "contradicted", "heading": "Warranty", "in": "10 years"}
+      ],
+      "subjective": ["honestly it feels strong enough", "The seats are comfortable on long trips"]
+    },
+    "trailhead-ridgeback-video": {
+      "vehicle": {"make": "Kestrel", "model": "Ridgeback", "year": 2025, "market": "GCC", "trim": null},
+      "claims": [
+        {"attribute": "displacement", "value": 3.5, "unit": "L", "trim": "Summit", "verdict": "supported", "heading": "Engine & Performance", "in": "3.5-litre V6"},
+        {"attribute": "cylinders", "value": 6, "trim": "Summit", "verdict": "supported", "heading": "Engine & Performance", "in": "3.5-litre V6"},
+        {"attribute": "power", "value": 295, "unit": "hp", "trim": "Summit", "verdict": "supported", "heading": "Engine & Performance", "in": "295 horsepower"},
+        {"attribute": "torque", "value": 356, "unit": "Nm", "trim": "Summit", "verdict": "supported", "heading": "Engine & Performance", "in": "356 Nm"},
+        {"attribute": "gears", "value": 10, "trim": "Summit", "verdict": "supported", "heading": "Transmission & Drivetrain", "in": "ten-speed automatic"},
+        {"attribute": "transmission", "value": "automatic", "trim": "Summit", "verdict": "supported", "heading": "Transmission & Drivetrain", "in": "ten-speed automatic"},
+        {"attribute": "drivetrain", "value": "4WD", "trim": "Summit", "verdict": "supported", "heading": "Transmission & Drivetrain", "in": "four-wheel drive"},
+        {"attribute": "towing_capacity", "value": 3500, "unit": "kg", "trim": "Summit", "verdict": "supported", "heading": "Dimensions & Weights", "in": "tow 3,500 kg"},
+        {"attribute": "ground_clearance", "value": 235, "unit": "mm", "trim": "Summit", "verdict": "supported", "heading": "Dimensions & Weights", "in": "235 mm"},
+        {"attribute": "seating", "value": 7, "trim": "Summit", "verdict": "supported", "heading": "Dimensions & Weights", "in": "seats seven"},
+        {"attribute": "feature", "value": "Locking rear differential", "trim": "Summit", "verdict": "supported", "heading": "Safety & Driver Assistance", "in": "locking rear differential is standard"},
+        {"attribute": "displacement", "value": 2.0, "unit": "L", "trim": "Adventure", "verdict": "supported", "heading": "Engine & Performance", "in": "2.0-litre"},
+        {"attribute": "aspiration", "value": "turbocharged", "trim": "Adventure", "verdict": "supported", "heading": "Engine & Performance", "in": "turbocharged"},
+        {"attribute": "cylinders", "value": 4, "trim": "Adventure", "verdict": "supported", "heading": "Engine & Performance", "in": "four-cylinder"},
+        {"attribute": "power", "value": 245, "unit": "hp", "trim": "Adventure", "verdict": "supported", "heading": "Engine & Performance", "in": "245 horsepower"},
+        {"attribute": "drivetrain", "value": "AWD", "trim": "Adventure", "verdict": "supported", "heading": "Transmission & Drivetrain", "in": "all-wheel drive only"},
+        {"attribute": "acceleration", "value": 6.9, "unit": "s", "trim": "Adventure", "verdict": "contradicted", "heading": "Engine & Performance", "in": "6.9 seconds"},
+        {"attribute": "fuel_economy", "value": 11, "unit": "km/l", "trim": "Adventure", "verdict": "supported", "heading": "Fuel Economy (NEDC)", "in": "11 km/l"},
+        {"attribute": "towing_capacity", "value": 2500, "unit": "kg", "trim": "Adventure", "verdict": "contradicted", "heading": "Dimensions & Weights", "in": "2,500 kg"},
+        {"attribute": "feature", "value": "Third-row seats", "trim": "Adventure", "verdict": "supported", "heading": "Comfort & Technology", "in": "third row"},
+        {"attribute": "feature", "value": "Locking rear differential", "trim": "Adventure", "verdict": "supported", "heading": "Safety & Driver Assistance", "in": "no locking rear differential"},
+        {"attribute": "length", "value": 4890, "unit": "mm", "trim": null, "verdict": "supported", "heading": "Dimensions & Weights", "in": "4,890 mm long"},
+        {"attribute": "width", "value": 1930, "unit": "mm", "trim": null, "verdict": "supported", "heading": "Dimensions & Weights", "in": "1,930 mm wide"},
+        {"attribute": "fuel_economy", "value": 9.6, "unit": "km/l", "trim": "Summit", "verdict": "supported", "heading": "Fuel Economy (NEDC)", "in": "9.6 km/l"},
+        {"attribute": "fuel_tank", "value": 80, "unit": "L", "trim": "Summit", "verdict": "supported", "heading": "Fuel Economy (NEDC)", "in": "80 litres"},
+        {"attribute": "top_speed", "value": 220, "unit": "km/h", "trim": "Summit", "verdict": "contradicted", "heading": "Engine & Performance", "in": "220 km/h"}
+      ],
+      "subjective": ["the Summit feels unstoppable off-road"]
+    },
+    "voltkreis-eline-long-range": {
+      "vehicle": {"make": "Voltaire", "model": "E-Line", "year": 2024, "market": "Europe", "trim": "Long Range"},
+      "claims": [
+        {"attribute": "power", "value": 210, "unit": "kW", "trim": "Long Range", "verdict": "supported", "heading": "Motor & Performance", "in": "210 kW"},
+        {"attribute": "torque", "value": 350, "unit": "Nm", "trim": "Long Range", "verdict": "supported", "heading": "Motor & Performance", "in": "350 Nm"},
+        {"attribute": "acceleration", "value": 6.1, "unit": "s", "trim": "Long Range", "verdict": "supported", "heading": "Motor & Performance", "in": "6.1 seconds"},
+        {"attribute": "top_speed", "value": 180, "unit": "km/h", "trim": "Long Range", "verdict": "supported", "heading": "Motor & Performance", "in": "180 km/h"},
+        {"attribute": "battery_capacity", "value": 77, "unit": "kWh", "trim": "Long Range", "verdict": "supported", "heading": "Battery, Range & Charging (WLTP)", "in": "77 kWh"},
+        {"attribute": "range", "value": 580, "unit": "km", "trim": "Long Range", "verdict": "contradicted", "heading": "Battery, Range & Charging (WLTP)", "in": "580 km"},
+        {"attribute": "dc_charging", "value": 170, "unit": "kW", "trim": "Long Range", "verdict": "supported", "heading": "Battery, Range & Charging (WLTP)", "in": "170 kW"},
+        {"attribute": "curb_weight", "value": 1960, "unit": "kg", "trim": "Long Range", "verdict": "supported", "heading": "Dimensions & Weights", "in": "1,960 kg"},
+        {"attribute": "cargo_volume", "value": 440, "unit": "L", "trim": "Long Range", "verdict": "supported", "heading": "Dimensions & Weights", "in": "440-litre boot"},
+        {"attribute": "drivetrain", "value": "RWD", "trim": "Long Range", "verdict": "supported", "heading": "Transmission & Drivetrain", "in": "rear-wheel drive"},
+        {"attribute": "transmission", "value": "single-speed", "trim": "Long Range", "verdict": "supported", "heading": "Transmission & Drivetrain", "in": "single-speed"},
+        {"attribute": "feature", "value": "Heat pump", "trim": "Long Range", "verdict": "supported", "heading": "Comfort & Technology", "in": "heat pump"},
+        {"attribute": "feature", "value": "Panoramic glass roof", "trim": "Long Range", "verdict": "supported", "heading": "Comfort & Technology", "in": "panoramic glass roof"},
+        {"attribute": "feature", "value": "Vehicle-to-load", "trim": "Long Range", "verdict": "supported", "heading": "Comfort & Technology", "in": "vehicle-to-load"},
+        {"attribute": "feature", "value": "Head-up display", "trim": "Long Range", "verdict": "partial", "heading": "Comfort & Technology", "in": "head-up display is standard too"},
+        {"attribute": "battery_capacity", "value": 58, "unit": "kWh", "trim": "Standard Range", "verdict": "supported", "heading": "Battery, Range & Charging (WLTP)", "in": "58 kWh"},
+        {"attribute": "range", "value": 435, "unit": "km", "trim": "Standard Range", "verdict": "supported", "heading": "Battery, Range & Charging (WLTP)", "in": "435 km"},
+        {"attribute": "battery_warranty_years", "value": 8, "trim": "Long Range", "verdict": "supported", "heading": "Warranty", "in": "eight-year warranty"}
+      ],
+      "subjective": ["The ride is firm but well controlled"]
+    },
+    "retro-solara-2023": {
+      "vehicle": {"make": "Meridian", "model": "Solara", "year": 2023, "market": null, "trim": "SE"},
+      "claims": [
+        {"attribute": "power", "value": 203, "unit": "hp", "trim": "SE", "verdict": "unverifiable", "heading": null, "in": "203 hp"},
+        {"attribute": "fuel_tank", "value": 60, "unit": "L", "trim": "SE", "verdict": "unverifiable", "heading": null, "in": "60-litre fuel tank"}
+      ],
+      "subjective": ["It is a comfortable, sensible commuter"]
+    },
+    "continental-solara-excel": {
+      "vehicle": {"make": "Meridian", "model": "Solara", "year": 2025, "market": "Europe", "trim": "Excel Hybrid"},
+      "claims": [
+        {"attribute": "power", "value": 218, "unit": "PS", "trim": "Excel Hybrid", "verdict": "supported", "heading": "Engine & Performance", "in": "218 PS"},
+        {"attribute": "fuel_economy", "value": 4.8, "unit": "L/100km", "trim": "Excel Hybrid", "verdict": "supported", "heading": "Fuel Economy & Emissions (WLTP)", "in": "4.8 l/100km"},
+        {"attribute": "fuel_economy", "value": 49, "unit": "mpg", "trim": "Excel Hybrid", "verdict": "supported", "heading": "Fuel Economy & Emissions (WLTP)", "in": "49 mpg"},
+        {"attribute": "curb_weight", "value": 1655, "unit": "kg", "trim": "Excel Hybrid", "verdict": "supported", "heading": "Dimensions & Weights", "in": "1,655 kg"},
+        {"attribute": "acceleration", "value": 8.4, "unit": "s", "trim": "Excel Hybrid", "verdict": "contradicted", "heading": "Engine & Performance", "in": "8.4 seconds"},
+        {"attribute": "airbags", "value": 8, "trim": "Excel Hybrid", "verdict": "supported", "heading": "Safety & Driver Assistance", "in": "Eight airbags"},
+        {"attribute": "feature", "value": "Head-up display", "trim": "Excel Hybrid", "verdict": "supported", "heading": "Comfort & Technology", "in": "head-up display is standard"},
+        {"attribute": "feature", "value": "Panoramic sunroof", "trim": "Excel Hybrid", "verdict": "supported", "heading": "Comfort & Technology", "in": "panoramic sunroof costs extra"},
+        {"attribute": "feature", "value": "Ventilated front seats", "trim": "Excel Hybrid", "verdict": "supported", "heading": "Comfort & Technology", "in": "no ventilated front seats"},
+        {"attribute": "warranty_years", "value": 5, "trim": "Excel Hybrid", "verdict": "contradicted", "heading": "Warranty", "in": "five years"}
+      ],
+      "subjective": ["The interior is classy"]
+    }
+  }
+}
